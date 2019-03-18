@@ -1,0 +1,726 @@
+<html lang="en">
+<head>
+    
+    <link href='https://fonts.googleapis.com/css?family=Jua' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=K2D' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Sarpanch' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Delius Unicase' rel='stylesheet'>        
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Sue Ellen Francisco' rel='stylesheet'>
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	
+    <style>
+    
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body{
+    font-family: Jua;
+    
+    
+}
+a {
+	font-family:Jua;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+  color:deepskyblue;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Jua;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+.txt1 {
+  font-family:Jua;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #999999;
+}
+
+.txt2 {
+  font-family:Jua;
+  font-size: 20px;
+  line-height: 1.5;
+  color:#ffff;
+    text-decoration: none;
+}
+
+
+.container-login100 {
+  width: 100%;  
+  height:100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+   
+    
+}
+
+.wrap-login100 {
+    margin-top: 60px;
+    margin-left:480px;
+    margin-right: 100px;
+  width: 400px;
+     background-color:rgba(0,0,0,0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+    height:600px;
+  padding: 80px 80px 80px 80px;
+}
+
+.login100-form-title {
+  font-family:Sarpanch;
+  font-size: 36px;
+  color:navy;
+  line-height: 1.2;
+  text-align: center;
+
+  width: 100%;
+  display: block;
+  padding-bottom: 54px;
+}
+.wrap-input100 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.input100 {
+  font-family:Jua;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+}
+.focus-input100 {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: rgba(87,184,70, 0.8);
+}
+
+.input100:focus + .focus-input100 {
+    animation: anim-shadow 0.5s ease-in-out forwards;
+}
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+.symbol-input100 {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 35px;
+  pointer-events: none;
+  color: #666666;
+  transition: all 0.4s;
+}
+
+.input100:focus + .focus-input100 + .symbol-input100 {
+  color:navy;
+  padding-left: 28px;
+}
+
+.container-login100-form-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.login100-form-btn {
+  font-family:Jua;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background-color:dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+ 
+  transition: all 0.4s;
+}
+
+.login100-form-btn:hover {
+  background-color:rgb(0,0,0,0.5);
+}
+
+@media (max-width: 992px) {
+  .wrap-login100 {
+    padding: 177px 90px 33px 85px;
+  }
+
+  .login100-pic {
+    width: 35%;
+  }
+
+  .login100-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-login100 {
+    padding: 100px 80px 33px 80px;
+  }
+
+  .login100-pic {
+    display: none;
+  }
+
+  .login100-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding: 100px 15px 33px 15px;
+  }
+}
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: white;
+  border: 1px solid #c80000;
+  border-radius: 13px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+  pointer-events: none;
+
+  font-family:Jua;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f06a";
+  font-family:Jua;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 13px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+    h
+            {
+                color:navy;
+                font-family:Sarpanch;
+                font-size: 50px;
+                
+            }
+            .p
+            {
+                background-color:azure;
+            padding-left:25px;
+                padding-right: 25px;
+                text-align: center;
+                font-size:18px;
+                font-family:Marvel;
+                color:firebrick;
+                
+            }
+            h2
+            {
+                
+                font-size: 40px;
+                color: navy;
+                font-family:Sue Ellen Francisco;
+                background-color:antiquewhite;
+            }
+            body
+            {
+                background-color: white;
+                background-size:cover;
+            }
+            nav
+            {
+               
+                width:100%;
+                height: 40px;
+                background: #0f0c29;  /* fallback for old browsers */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                
+                
+            }
+            nav ul
+            {
+                overflow: hidden;
+                list-style: none;
+                margin:12;
+                border-radius: 20px;
+            }
+            ul li
+            {
+                float:left;
+                padding:8px;
+                border-radius: 10px;
+                
+            }
+            ul li a
+            {
+                
+                list-style-type: none;
+                text-decoration: none;
+                color:white;
+                border-radius:10px;
+                border: 0.5px;
+                font-family:Sarpanch;
+                font-size: 18px;
+            }
+            ul li a:hover{
+            
+                transition: 0.5s;
+            
+                width:100%;
+           padding: 5px;
+            }
+        .containera
+        {
+             background-color:#243B55;
+            width:25%;
+            height:300px;
+            float:left;
+        }
+    
+      .containera ul
+        {
+            background-color:#243B55;
+            
+    
+        }
+        .containera ul li
+        {
+    
+            float:none;
+            margin-left: 30px;
+        }
+        .containera ul li a
+        {
+            font-family:monospace;
+            color:white;
+            text-decoration:none;
+            font-size: 15px;
+        }
+         .containerb
+        {
+             background-color:#243B55;
+            width:25%;
+            height:300px;
+            float:left;
+        }
+    
+      .containerb ul
+        {
+            background-color:#243B55;
+            
+    
+        }
+        .containerb ul li
+        {
+    
+            float:none;
+            margin-left: 30px;
+        }
+        .containerb ul  li a
+        {
+            font-family:monospace;
+            color:white;
+            text-decoration:none;
+            font-size: 15px;
+        }
+         .containerc
+        {
+             background-color:#243B55;
+            width:25%;
+            height:300px;
+            float:left;
+        }
+    
+      .containercul
+        {
+            background-color:#243B55;
+            
+    
+        }
+        .containerc ul li
+        {
+    
+            float:none;
+            margin-left: 30px;
+        }
+        .containerc ul  li a
+        {
+            font-family:monospace;
+            color:white;
+            text-decoration:none;
+            font-size: 15px;
+        }
+         .containerd
+        {
+             background-color:#243B55;
+            width:25%;
+            height:300px;
+            float:left;
+        }
+    
+      .containerd ul
+        {
+            background-color:#243B55;
+            
+        }
+        
+        .containerd p
+        {
+            margin-top: 10px;
+            font-family:inherit;
+            color:white;
+            text-decoration:none;
+            font-size: 15px;
+        }
+   
+   
+        h4
+        {
+            margin-left: 36px;
+            font-family: monospace;
+            font-size: 15px;
+            color: #FFF;
+        }
+        .block 
+        {
+            float:left;
+            width:100%;
+            
+        }
+          .containere
+        {
+             background-color:#243B55;
+            width:100%;
+            height:50px;
+            float:left;
+        }
+      .containere  .fa {
+  padding: 10px;
+  font-size: 30px;
+                 border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+            }
+        .block
+        {
+            margin-top: 10%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h>SPESE</h>&emsp;
+    
+     <nav>
+      <ul>
+      
+         
+          <li><a href="a1.html">HOME</a></li>
+          <li><a href="mobiles.html">ELECTRONICS</a>
+              </li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="clothes.html">FASHION</a></li>
+          <li><a href="reg.html">REGISTRATION</a></li>
+          
+          <li><a href="#">BABY , KIDS</a></li>
+          <li><a href="#">HOME , FURNITURE</a></li>
+          <li><a href="lap.html">LAPTOPS</a></li>
+          <li><a href="offer.html">OFFER ZONE</a></li>
+          
+        
+          
+        
+          </ul>
+        </nav>
+
+
+		<div class="container-login100">
+			<div class="wrap-login100">
+
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						RESET
+					</span>
+
+
+<div class="wrap-input100 validate-input" data-validate = "phon is required">
+						<input class="input100" type="tel" name="phon" placeholder="Phonenumuber">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</span>
+					</div>
+                    					<div class="wrap-input100 validate-input" required>
+						<input class="input100" type="text" name="otp" placeholder="otp">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-comment" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+                    
+	
+                    <div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="re-Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+	                 
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" onclick="myfunction()">
+				           RESET
+						</button>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a class="txt2" href="login.html">
+                            login
+                        </a>&emsp;
+                        <a class="txt2" href="reg.html">
+							sign in
+						</a>
+					</div>
+                    <br>
+					<br>
+				</form>
+			</div>
+		</div>
+    <br>
+    <br>
+    <br>
+    <script>
+        function myfunction()
+        {
+            alert("submmited successfully");
+        }
+    </script>
+
+	<div class="block">
+    <div class="containera">
+        
+        <ul>
+            <br>
+            <br>
+        <h4>ABOUT US</h4>    
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">press</a></li>
+            
+            <br>
+            <br>
+                </ul>
+    </div>
+    <div class="containerb">
+        
+        <ul>
+            <br>
+            <br>
+        <h4>HELP</h4>    
+            <li><a href="#">shippings</a></li>
+            <li><a href="#">payments</a></li>
+            <li><a href="#">cancellation</a></li>
+            
+            <br>
+            <br>
+                </ul>
+            
+        
+    </div>
+        <div class="containerc">
+        
+        <ul>
+            <br>
+            <br>
+        <h4>ABOUT US</h4>    
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">press</a></li>
+            
+            <br>
+            <br>
+                </ul>
+            
+        
+    </div>
+        <div class="containerd">
+            <br>
+            <br>
+            <h4>ADDRESS</h4>
+        
+        <p>SPESE Internet Pvt Ltd Block B (Begonia),
+
+Ground Floor, Embassy Tech Village,
+
+Outer Ring Road, Devarabeesanahalli Village,
+
+Varthur Hobli, Bengaluru East Taluk,
+
+Bengaluru District,
+
+Karnataka, India, 560103.</p>
+            
+        
+    </div>
+    </div>
+
+     <div class="containere">
+         <center>
+    <div class="l">
+        <a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true"></a>
+<a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+<a href="#" class="fa fa-google" aria-hidden="true"></a>
+<a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+<a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+<a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+<a href="#" class="fa fa-pinterest" aria-hidden="true"></a>
+            </div>
+         </center>
+    </div>
+ 
+    
+    <script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+    </script>
+    <script src="project/js/main.js"></script>
+</body>
+</html>

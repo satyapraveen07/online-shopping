@@ -1,0 +1,703 @@
+<html>
+    <head>
+        <title>dada</title>
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Jua' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=K2D' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Sarpanch' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Delius Unicase' rel='stylesheet'>        
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Sue Ellen Francisco' rel='stylesheet'>
+        
+        <style>
+            .left
+            {
+                margin-top: 0;
+                margin-left: 5;
+                border-bottom:1px solid navy;
+                border-left: 1px solid navy;
+                border-top: 1px solid navy;
+                border-right: 1px solid navy;
+                width:90px;
+                height:2000px;
+                float:left;
+            }
+            .right
+            {
+                margin-top: 0;
+                margin-right: 5;
+                border-bottom:1px solid navy;
+                border-left: 1px solid navy;
+                border-top: 1px solid navy;
+                border-right: 1px solid navy;
+                width:90px;
+                height:2000px;
+                float:right;
+            }
+            .container
+            {
+                width:100%;
+                margin-top:0;
+                font-family:sans-serif;
+                letter-spacing: 1px;
+                border-bottom:1px solid navy;
+                border-left: 1px solid navy;
+                border-top: 1px solid navy;
+                border-right: 1px solid navy;
+                margin-bottom: 10px;
+                border-bottom-style:groove;
+                border-radius: 10px;
+            }
+            .container h2
+            {
+                background:#0062cc;
+                color:#fff;
+                width:200px;
+                font-size:24px;
+                padding:5px;
+                height:40px;
+            }
+            .container h2::after{
+                content:'';
+                border-top:40px solid #fff;
+                border-right: 40px solid transparent;
+                position:relative;
+                left:46px;
+                top:34px;
+                
+            }
+            .row
+            {
+             margin-top: 30px;   
+            }
+            img 
+            {
+                width:100%;
+            }
+            .product-bottom.fa
+            {
+                color:#28a745;
+                font-size: 10px;
+            }
+            .product-bottom h3
+            {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .product-bottom h5
+            {
+                font-size: 15px;
+                padding-bottom: 10px;
+            }
+            .overlay
+            {
+             display:block;
+                opacity:0;
+                position: absolute;
+                top:10%;
+                margin-left: 0;
+                width:70px;
+            }
+            .product-top:hover .overlay
+            {
+                opacity:1;
+                margin-left:5%;
+                transition: 0.5s;
+            }
+            .overlay .fa
+            {
+                cursor:pointer;
+                background-color:#fff;
+                color:#000;
+                height:35px;
+                width:35px;
+                font-size:20px;
+                padding:7px;
+                margin:5%;
+                margin-bottom: 5%;
+            }
+            h
+            {
+                font-family: Sarpanch;
+                font-size: 40px;
+            }
+            .overlay .btn-secondary
+            {
+                background: transparent !important;
+                border:none !important;
+                box-shadow: none !important;
+            }
+             nav
+            {
+               
+                width:100%;
+                height: 40px;
+                background: #0f0c29;  /* fallback for old browsers */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                
+                
+            }
+            nav ul
+            {
+                overflow: hidden;
+                list-style: none;
+                margin:12;
+                border-radius: 20px;
+            }
+            ul li
+            {
+                float:left;
+                padding:8px;
+                border-radius: 10px;
+                
+            }
+            ul li a
+            {
+                
+                list-style-type: none;
+                text-decoration: none;
+                color:white;
+                border-radius:10px;
+                border: 0.5px;
+                font-family:Sarpanch;
+                font-size: 18px;
+            }
+            ul li a:hover{
+            
+                transition: 0.5s;
+            text-decoration: none;
+                width:100%;
+           padding: 5px;
+            }
+            h5
+            {
+                font-size: 20px;
+                font-family: sans-serif;
+                display: block;
+                color: darkred;
+                font-weight: bold;
+            }
+            .previous {
+  background-color:transparent;
+  color:black;
+                  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+                border:3px  solid transparent;
+    margin-bottom: 5%;        
+}
+
+.next {
+  background-color:transparent;
+  color:black;
+      text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+    border:3px  solid transparent;
+    margin-bottom: 5%;
+    
+}
+
+            
+
+.next:hover {
+  background-color:black;
+  color: white;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    
+}
+            .previous:hover {
+  background-color:black;
+  color: white;
+                transition: 0.3s ease-in-out;
+                 text-decoration: none;
+    
+}
+            .containerf
+            {
+                background-color: darkslateblue;
+            }
+             .mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+            .w3-left w3-hover-text-khaki
+            {
+                color: black;
+            }
+        
+         
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h>SPESE</h>
+        <nav>
+      <ul>
+      
+          <li><a href="a1.html">HOME</a></li>
+          <li><a href="mobiles.html">ELECTRONICS</a>
+              </li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="clothes.html">FASHION</a></li>
+          <li><a href="reg.html">REGISTRATION</a></li>
+          
+          <li><a href="#">BABY , KIDS</a></li>
+          <li><a href="#">HOME , FURNITURE</a></li>
+          <li><a href="lap.html">LAPTOPS</a></li>
+          <li><a href="offer.html">OFFER ZONE</a></li>
+          
+         
+        
+          
+        
+          </ul>
+        </nav>
+        
+       <div class="w3-content w3-display-container" style="max-width:1000px">
+  <img class="mySlides" src="s1.jpg" style="width:100%;height:400px;">
+  <img class="mySlides" src="s4.jpg" style="width:100%">
+  <img class="mySlides" src="s3.jpg" style="width:100%;height:300px;">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" color="black">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+        <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+      
+       <div class="left"><img src="ONLINE.png" height="500px"><img src="ONLINE.png"height="500px"><img src="ONLINE.png"height="500px"><img src="ONLINE.png"height="500px"></div>
+        <div class="right"><img src="shop2.png"><br><br><br><br><br><br><br><br><img src="shop2.png"><br><br><br><br><br><br><br><br><img src="shop2.png"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c1.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>uspolo</h3>
+                        <h5>600&#8377;</h5>
+                    </div>
+                    
+                </div>
+                         <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c2.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>louis</h3>
+                        <h5>1,600&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c3.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>levis</h3>
+                        <h5>1,800&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c4.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>wrangler</h3>
+                        <h5>2,000&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c5.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>pepejeans</h3>
+                        <h5>1,000&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c6.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>LP</h3>
+                        <h5>1,900&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c7.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>kappa</h3>
+                        <h5>1,700&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c8.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>silk saree</h3>
+                        <h5>1,400&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c9.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>dress</h3>
+                        <h5>1,590&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c10.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>espoir</h3>
+                        <h5>399&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c11.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>eddy hager</h3>
+                        <h5>1,999&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c12.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>eddy hager</h3>
+                        <h5>2,990&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c13.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>CITIZEN</h3>
+                        <h5>15,990&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c14.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>FOSSIL</h3>
+                        <h5>16,999&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c18.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>FOSSIL</h3>
+                        <h5>15,028&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c15.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>VICTORIAN</h3>
+                        <h5>21,990&#8377;</h5>
+                    </div>
+                    
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c16.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>CASIO</h3>
+                        <h5>19,900&#8377;</h5>
+                    </div>
+                    
+                </div>
+                         <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="c17.jpg">
+                        <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="quick shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to whislist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="add to cart"><i class="fa fa-shopping-cart"></i></button></div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>SELIKO</h3>
+                        <h5>21,990&#8377;</h5>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <center>
+        <a href="#" class="previous">&laquo;Previous</a>&emsp;
+<a href="#" class="next">Next &raquo;</a>
+            </center>
+        <div class="containerf">
+            <hr>
+            <center>
+           <p style="color:white;">&copy;2018-2029 Spese.com</p>
+            </center>
+        </div>
+    </body>
+</html>

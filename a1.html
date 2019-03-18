@@ -1,0 +1,740 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+       <link href='https://fonts.googleapis.com/css?family=Jua' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=K2D' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Sarpanch' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Delius Unicase' rel='stylesheet'>        
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Sue Ellen Francisco' rel='stylesheet'>
+        <style>
+            h
+            {
+                color:navy;
+                font-family:Sarpanch;
+                font-size: 50px;
+                
+            }
+            .p
+            {
+                background-color:azure;
+            padding-left:25px;
+                padding-right: 25px;
+                text-align: center;
+                font-size:18px;
+                font-family:Marvel;
+                color:firebrick;
+                
+            }
+            h2
+            {
+                
+                font-size: 40px;
+                color: navy;
+                font-family:Sue Ellen Francisco;
+                background-color:antiquewhite;
+            }
+            body
+            {
+                background-color: white;
+                background-size:cover;
+            }
+            nav
+            {
+               
+                width:100%;
+                height: 40px;
+                background:black;
+                
+                
+            }
+            nav ul
+            {
+                overflow: hidden;
+                list-style: none;
+                margin:12;
+                border-radius: 20px;
+            }
+            ul li
+            {
+                float:left;
+                padding:8px;
+                border-radius: 10px;
+                
+            }
+            ul li a
+            {
+                
+                list-style-type: none;
+                text-decoration: none;
+                color:white;
+                border-radius:10px;
+                border: 0.5px;
+                font-family:Sarpanch;
+                font-size: 18px;
+            }
+            ul li a:hover{
+            
+                transition: 0.5s;
+            
+                width:100%;
+           padding: 5px;
+            }
+        
+             ul input[type=text] {
+  float: right;
+  padding:7px;
+                 padding-bottom: 5px;
+  
+  margin-top:2px;
+                 margin-bottom: 6px;
+  margin-right:0px;
+  font-size: 17px;
+                 border-radius: 5px;
+}
+            button
+            {
+                padding:10px;
+                border-radius:15px;
+                background-color:deepskyblue;
+                 transition-duration: 0.4s;
+                 margin: 4px 2px;
+                border: none;
+                padding: 15px 32px;
+                display: inline-block;
+                color: white;
+                font-family:Jua;
+                font-size: 20px;
+                
+            }
+            button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+            
+
+
+         
+             .a
+            {
+                width:600px;
+                height:600px;
+                background-color:rgb(255,255,255,0.8);
+                border-radius:30px;
+                padding-left: 30px;
+                
+            }
+             .b
+            {
+                background-color:white;
+                width:600px;
+                height:700px;
+                float:right;
+                border:10px solid gray;
+                
+            }
+             .b button
+            {
+                padding:5px;
+                border-radius:15px;
+                background-color:deepskyblue;
+                 transition-duration: 0.4s;
+                 margin: 4px 2px;
+                border: none;
+                padding: 15px 32px;
+                display: inline-block;
+                color: white;
+                font-family:Jua;
+                font-size: 20px;
+                
+
+            }
+            .box
+        {
+            position:absolute;
+            top:70%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            width:500px;
+            height:400px;
+            transform-style:preserve-3d;
+            perspective:2000px;
+            transition:0.5s;
+        }
+        .text
+        {
+            position: absolute;
+            top:30px;
+            left:-30px;
+            background:#262626;
+            width:calc(100% + 60px);
+            height:calc(100% - 60px);
+            transition: 0.5s;
+        }
+        .box:hover .text
+        {
+            transform:rotateY(30deg);
+        }
+        .box:hover{
+            transform: translate(-50%,-50%) rotateY(-30deg) skewY(5deg);
+        }
+        .text div
+        {
+            position:absolute;
+            top:50%;
+            left:0;
+            width:100%;
+            transform:translateY(-50%);
+            padding: 40px 80px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .text div h1
+        {
+            margin:0 0 20px;
+            color:#fff;
+        }
+        .text div p
+        {
+          margin:0 0 20px;
+            padding:0;
+            color:#fff;
+            font-size:20px;
+        }
+        .box:before
+        {
+            content:'';
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background: transparent;
+            border-top:20px solid dodgerblue;
+            border-left:20px solid dodgerblue;
+            box-sizing: border-box;
+            
+            
+        }
+        .box:after
+        {
+            content:'';
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background: transparent;
+            border-bottom:20px solid dodgerblue;
+            border-right:20px solid dodgerblue;
+            box-sizing: border-box;
+            box-shadow: rgb(0,0,0,0.5) 5px;
+            
+            
+        }
+ .flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+     float: left;
+     margin-left:100px;
+     margin-top: 30px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color:#fff;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+            .flip-card-back li a:hover{
+                transform: scale(1.1);
+                color:green;
+            }
+            hr
+            {
+                border:0.5px solid lightgray;
+            }
+            
+            .cards{
+                padding-left: 80px;
+            }
+            .containera
+        {
+             background-color:#243B55;
+            width:25%;
+            height:300px;
+            float:left;
+        }
+    
+      .containera ul
+        {
+            background-color:#243B55;
+            
+    
+        }
+        .containera ul li
+        {
+    
+            float:none;
+            margin-left: 30px;
+            list-style: none;
+        }
+        .containera ul li a
+        {
+            font-family:monospace;
+            color:white;
+            text-decoration:none;
+            font-size: 15px;
+        }
+         .containerb
+        {
+             background-color:#243B55;
+            width:25%;
+            height:300px;
+            float:left;
+        }
+    
+      .containerb ul
+        {
+            background-color:#243B55;
+            
+    
+        }
+        .containerb ul li
+        {
+    
+            float:none;
+            margin-left: 30px;
+             list-style: none;
+        }
+        .containerb ul  li a
+        {
+            font-family:monospace;
+            color:white;
+            text-decoration:none;
+            font-size: 15px;
+        }
+         .containerc
+        {
+             background-color:#243B55;
+            width:25%;
+            height:300px;
+            float:left;
+        }
+    
+      .containercul
+        {
+            background-color:#243B55;
+            
+    
+        }
+        .containerc ul li
+        {
+    
+            float:none;
+            margin-left: 30px;
+             list-style: none;
+        }
+        .containerc ul  li a
+        {
+            font-family:monospace;
+            color:white;
+            text-decoration:none;
+            font-size: 15px;
+        }
+         .containerd
+        {
+             background-color:#243B55;
+            width:25%;
+            height:300px;
+            float:left;
+        }
+    
+      .containerd ul
+        {
+            background-color:#243B55;
+            
+            
+        }
+        
+        .containerd p
+        {
+            margin-top: 10px;
+            font-family:inherit;
+            color:white;
+            text-decoration:none;
+            font-size: 15px;
+        
+        }
+   
+   
+        h4
+        {
+            margin-left: 36px;
+            font-family: monospace;
+            font-size: 15px;
+            color: #FFF;
+        }
+        .block 
+        {
+            
+            width:100%;
+            
+        }
+          .containere
+        {
+             background-color:#243B55;
+            width:100%;
+            height:70px;
+            float:left;
+        }
+      .containere  .fa {
+  padding: 10px;
+  font-size: 30px;
+                 border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+          color: #555;
+            }
+            .containere  .fa:hover
+            {
+                background-color: aqua;
+            }
+
+
+#mybtn
+            {
+                background-color: rgba(0,0,0,0.5);
+                font-family: Delius Unicase;
+                float: right;
+                border-radius: 25px;
+                box-shadow: 10px rgba(0,0,0,0.5);
+            }
+             .containerf
+        {
+             background-color:#243B55;
+            width:100%;
+            height:70px;
+            float:left;
+        }
+
+        </style>
+        
+    </head>
+    <body>
+        <h>SPESE</h>&emsp;
+        <img src="logo.png" style="width:150px;height: 150px; float:right;">
+       <br>
+        <br>
+        <br>
+        <br>
+
+      <nav>
+      <ul>
+      
+         
+         <li><a href="a1.html">HOME</a></li>
+          <li><a href="mobiles.html">ELECTRONICS</a>
+              </li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="clothes.html">FASHION</a></li>
+          <li><a href="reg.html">REGISTRATION</a></li>
+          
+          <li><a href="#">BABY , KIDS</a></li>
+          <li><a href="#">HOME , FURNITURE</a></li>
+          <li><a href="lap.html">LAPTOPS</a></li>
+          <li><a href="offer.html">OFFER ZONE</a></li>
+          
+          
+        
+          
+        
+          </ul>
+        </nav>
+        <br>
+        <br>
+        <br><br><br>
+        <div class="body">
+        <div class="a" align="left">
+                <br>
+                <br>
+                <br>
+                <br>
+            &emsp;<h style="color:darkblue;font-size:60px;font-family:Julius Sans One;position: relative; padding:0;">ONLINE</h><br>
+            &emsp;<h style="color:darkblue;font-size: 50px;font-family:jua;font-weight:bolder;line-spacing:1px;">SHOPPING</h><br>
+                &emsp;<h style="color:blue;font-size: 30px;font-family:Julius Sans One;">INTRODUCTION</h><br><br>
+            &emsp;&emsp;<h style="color:darkblue;font-size: 20px;font-family:K2D;font-weight:bolder;">I was sad but <br/>&emsp;then i bought something <br/>&emsp;online i fell better now</h><br>
+            <br>
+            &emsp;<button><a href="offer.html" style="text-decoration: none;color:white;">GET MORE INFO</a></button>
+            
+        
+        </div>
+            <br>
+            <br>
+            <div class="box">
+            
+            <div class="text">
+                
+                
+                <div>
+                    <h1>SHOPPING</h1>
+                    <p>STAY HOME AND SHOP ONLINE.<br/>YOU'RE TO PRETTY<br/>TO HAVE TO LOOK<br/>FOR PARKING SLOT 
+</p>
+                </div>
+            </div>
+        </div>
+       <hr style="width=100%;">
+        <center>
+        <h>OUR PRODUCTS</h>
+            </center>
+        <hr>
+            <center>
+        <div class="cards">
+            <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="uspolo.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>US POLO</h1> 
+      <p>U.S. Polo Assn. is the official brand of the United States Polo Association (USPA), the non-profit governing body for the sport of polo in the United States.</p> 
+    <button><a href="clothes.html" style="text-decoration: none;color:white;">see offers</a></button>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="nike.jpg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>NIKE</h1> 
+      
+          <li><a href="#" style="font-family: K2D;text-decoration-line: none;font-size: 20px;">SHOES</a></li>
+          <li><a href="#"  style="font-family:K2D;text-decoration-line: none;font-size: 20px;">ACCESORIES</a></li>
+          <li><a href="#"  style="font-family:K2D;text-decoration-line: none;font-size: 20px;">BANDS</a></li>
+          <li><a href="#"  style="font-family:K2D;text-decoration-line: none;font-size: 20px;">T-SHIRTS</a></li>
+          <button><a href="clothes.html" style="text-decoration: none;color:white;">see offers</a></button>
+        
+    </div>
+  </div>
+</div> 
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="louis.jpg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>LOUIS PHILIPPE </h1> 
+       <li><a href="#" style="font-family: K2D;text-decoration-line: none;font-size: 20px;">SHOES</a></li>
+          <li><a href="#"  style="font-family:K2D;text-decoration-line: none;font-size: 20px;">SHIRTS</a></li>
+     <button><a href="clothes.html" style="text-decoration: none;color:white;">see offers</a></button>
+    </div>
+  </div>
+</div>
+            <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="puma.jpg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>PUMA</h1> 
+        <li><a href="#" style="font-family: K2D;text-decoration-line: none;font-size: 20px;">SHOES</a></li>
+          <li><a href="#"  style="font-family:K2D;text-decoration-line: none;font-size: 20px;">SHIRTS</a></li>
+          <button><a href="clothes.html" style="text-decoration: none;color:white;">see offers</a></button>
+    </div>
+  </div>
+</div>
+            <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="apple.jpg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <img src="iphone.jpg" style="width:50px;height:50px;">
+      <h1>Iphone XR</h1>
+        <p>PRICE:76,900/-</p>
+        <button><a href="mobiles.html" style="text-decoration: none;color:white;">see offers</a></button>
+    </div>
+  </div>
+            </div>
+            <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="levis.jpg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <h1>LEVIS</h1>
+          <li><a href="#" style="font-family: K2D;text-decoration-line: none;font-size: 20px;">SHOES</a></li>
+          <li><a href="#"  style="font-family:K2D;text-decoration-line: none;font-size: 20px;">ACCESORIES</a></li>
+          
+        <button><a href="clothes.html" style="text-decoration: none;color:white;">see offers</a></button>
+    </div>
+  </div>
+            </div>
+                <div class="flip-card">
+                <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="hp.jpg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <h1>HP</h1>
+          <li><a href="#" style="font-family: K2D;text-decoration-line: none;font-size: 20px;">LAPOTPS</a></li>
+          <li><a href="#"  style="font-family:K2D;text-decoration-line: none;font-size: 20px;">ACCESORIES</a></li>
+          
+        <button><a href="lap.html" style="text-decoration: none;color:white;">see offers</a></button>
+    </div>
+  </div>
+                </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="dell.jpg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <h1>DELL</h1>
+          <li><a href="#" style="font-family: K2D;text-decoration-line: none;font-size: 20px;">LAPOTPS</a></li>
+          <li><a href="#"  style="font-family:K2D;text-decoration-line: none;font-size: 20px;">ACCESORIES</a></li>
+          
+        <button><a href="lap.html" style="text-decoration: none;color:white;">see offers</a></button>
+    </div>
+  </div>
+                </div>
+            
+        
+            </div>
+            </center>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <center>
+            <h background-color="gray">About Us </h>
+            </center>
+            <div class="p">
+            <p>Spese Pvt Ltd. is an Indian electronic commerce company based in Bengaluru, India. Founded by Satyapraveen  in 2018, the company initially focused on book sales, before expanding into other product categories such as consumer electronics, fashion, and lifestyle products.<br/>&#9830;&#9830;&#9830;&#9830;&#9830;&#9830;&#9830;&#9830;&#9830;&#9830;&#9830;&#9830;&#9830;&#9830;	</p>
+            </div>
+        </div>
+        <div class="block">
+    <div class="containera">
+        
+        <ul>
+            <br>
+            <br>
+        <h4>ABOUT US</h4>    
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">press</a></li>
+            
+            <br>
+            <br>
+                </ul>
+    </div>
+    <div class="containerb">
+        
+        <ul>
+            <br>
+            <br>
+        <h4>HELP</h4>    
+            <li><a href="#">shippings</a></li>
+            <li><a href="#">payments</a></li>
+            <li><a href="#">cancellation</a></li>
+            
+            <br>
+            <br>
+                </ul>
+            
+        
+    </div>
+        <div class="containerc">
+        
+        <ul>
+            <br>
+            <br>
+        <h4>POLICY</h4>    
+            <li><a href="#">Return policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Secuirity</a></li>
+            
+            <br>
+            <br>
+                </ul>
+            
+        
+    </div>
+        <div class="containerd">
+            <br>
+            <br>
+            <h4>ADDRESS</h4>
+        
+        <p>SPESE Internet Pvt Ltd Block B (Begonia),
+
+Ground Floor, Embassy Tech Village,
+
+Outer Ring Road, Devarabeesanahalli Village,
+
+Varthur Hobli, Bengaluru East Taluk,
+
+Bengaluru District,
+
+Karnataka, India, 560103.</p>
+            
+        
+    </div>
+    </div>
+
+     <div class="containere">
+         <center>
+    <div class="l">
+        <a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true"></a>
+<a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+<a href="#" class="fa fa-google" aria-hidden="true"></a>
+<a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+<a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+<a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+<a href="#" class="fa fa-pinterest" aria-hidden="true"></a>
+            </div>
+         </center>
+    </div>
+ 
+<!--            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>-->
+        <div class="containerf">
+            <hr>
+            <center>
+           <p style="color:white">&copy;2018-2029 Spese.com</p>
+            </center>
+        </div>
+  </body>
+</html>
